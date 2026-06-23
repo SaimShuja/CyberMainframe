@@ -1,0 +1,64 @@
+// Physical Pin Constraints File (.cst) for Cyber Mainframe Engine
+// Target Hardware Platform: Tang Nano (GW1N-1)
+
+IO_LOC "lcd_b[4]" 45;
+IO_PORT "lcd_b[4]" IO_TYPE=LVCMOS33 PULL_MODE=UP DRIVE=8;
+IO_LOC "lcd_b[3]" 44;
+IO_PORT "lcd_b[3]" IO_TYPE=LVCMOS33 PULL_MODE=UP DRIVE=8;
+IO_LOC "lcd_b[2]" 43;
+IO_PORT "lcd_b[2]" IO_TYPE=LVCMOS33 PULL_MODE=UP DRIVE=8;
+IO_LOC "lcd_b[1]" 42;
+IO_PORT "lcd_b[1]" IO_TYPE=LVCMOS33 PULL_MODE=UP DRIVE=8;
+IO_LOC "lcd_b[0]" 41;
+IO_PORT "lcd_b[0]" IO_TYPE=LVCMOS33 PULL_MODE=UP DRIVE=8;
+
+IO_LOC "lcd_g[5]" 40;
+IO_PORT "lcd_g[5]" IO_TYPE=LVCMOS33 PULL_MODE=UP DRIVE=8;
+IO_LOC "lcd_g[4]" 39;
+IO_PORT "lcd_g[4]" IO_TYPE=LVCMOS33 PULL_MODE=UP DRIVE=8;
+IO_LOC "lcd_g[3]" 38;
+IO_PORT "lcd_g[3]" IO_TYPE=LVCMOS33 PULL_MODE=UP DRIVE=8;
+IO_LOC "lcd_g[2]" 34;
+IO_PORT "lcd_g[2]" IO_TYPE=LVCMOS33 PULL_MODE=UP DRIVE=8;
+IO_LOC "lcd_g[1]" 33;
+IO_PORT "lcd_g[1]" IO_TYPE=LVCMOS33 PULL_MODE=UP DRIVE=8;
+IO_LOC "lcd_g[0]" 32;
+IO_PORT "lcd_g[0]" IO_TYPE=LVCMOS33 PULL_MODE=UP DRIVE=8;
+
+IO_LOC "lcd_r[4]" 31;
+IO_PORT "lcd_r[4]" IO_TYPE=LVCMOS33 PULL_MODE=UP DRIVE=8;
+IO_LOC "lcd_r[3]" 30;
+IO_PORT "lcd_r[3]" IO_TYPE=LVCMOS33 PULL_MODE=UP DRIVE=8;
+IO_LOC "lcd_r[2]" 29;
+IO_PORT "lcd_r[2]" IO_TYPE=LVCMOS33 PULL_MODE=UP DRIVE=8;
+IO_LOC "lcd_r[1]" 28;
+IO_PORT "lcd_r[1]" IO_TYPE=LVCMOS33 PULL_MODE=UP DRIVE=8;
+IO_LOC "lcd_r[0]" 27;
+IO_PORT "lcd_r[0]" IO_TYPE=LVCMOS33 PULL_MODE=UP DRIVE=8;
+
+IO_LOC "lcd_video_de" 5;
+IO_PORT "lcd_video_de" IO_TYPE=LVCMOS33 PULL_MODE=UP DRIVE=8;
+IO_LOC "lcd_vsync" 46;
+IO_PORT "lcd_vsync" IO_TYPE=LVCMOS33 PULL_MODE=UP DRIVE=8;
+IO_LOC "lcd_hsync" 10;
+IO_PORT "lcd_hsync" IO_TYPE=LVCMOS33 PULL_MODE=UP DRIVE=8;
+IO_LOC "lcd_pixel_clk" 11;
+IO_PORT "lcd_pixel_clk" IO_TYPE=LVCMOS33 PULL_MODE=UP DRIVE=8;
+
+// Master Global Hardware Control Pins
+IO_LOC "ext_rst_n" 14;
+IO_PORT "ext_rst_n" IO_TYPE=LVCMOS33 PULL_MODE=UP;
+
+IO_LOC "ext_clk_24m" 35;
+IO_PORT "ext_clk_24m" IO_TYPE=LVCMOS33 PULL_MODE=UP;
+
+// Dedicated ESP32 SPI Communication Interface Lines
+IO_LOC "esp_sclk" 22;
+IO_PORT "esp_sclk" IO_TYPE=LVCMOS33 PULL_MODE=UP;
+IO_LOC "esp_spi_mosi" 23;
+IO_PORT "esp_spi_mosi" IO_TYPE=LVCMOS33 PULL_MODE=UP;
+IO_LOC "esp_spi_cs" 24;
+IO_PORT "esp_spi_cs" IO_TYPE=LVCMOS33 PULL_MODE=UP;
+
+IO_LOC "psram_cs_n" 19;
+IO_PORT "psram_cs_n" IO_TYPE=LVCMOS33 PULL_MODE=UP;
